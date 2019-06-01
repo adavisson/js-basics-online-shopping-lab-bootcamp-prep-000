@@ -12,7 +12,9 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  var rand = Math.floor(Math.random() * 100);
- setCart(getCart().push({itemName: item, itemPrice: rand}));
+ if(setCart(getCart().push({itemName: item, itemPrice: rand}))){
+   return `${item} had been added to your cart.`;
+ }
 }
 
 function viewCart() {
