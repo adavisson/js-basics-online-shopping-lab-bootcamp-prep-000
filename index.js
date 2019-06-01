@@ -36,6 +36,7 @@ function viewCart() {
         str += ` and ${arr[i].itemName} at $${arr[i].itemPrice}.`;
       }
     }
+    return str;
   }
 }
 
