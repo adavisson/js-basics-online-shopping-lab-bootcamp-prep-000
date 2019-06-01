@@ -17,7 +17,7 @@ function addToCart(item) {
  arr.push(obj);
  
  if(setCart(arr)){
-   return `${item} had been added to your cart.`;
+   return `${item} has been added to your cart.`;
  }
 }
 
