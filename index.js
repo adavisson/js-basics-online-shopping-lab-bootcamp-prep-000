@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- setCart(getCart().push({itemName: item, itemPrice: Math.Floor(Math.Random() * 100) );
+ setCart(getCart().push({itemName: item, itemPrice: Math.Floor(Math.Random() * 100)));
 }
 
 function viewCart() {
