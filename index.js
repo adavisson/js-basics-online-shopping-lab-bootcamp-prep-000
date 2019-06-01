@@ -23,6 +23,20 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var arr = getCart();
+  
+  if(arr.length === 0){
+    return `Your shopping cart is empty.`;
+  }else{
+    var str = `In your cart, you have`;
+    for (let i = 0; i < arr.length; i++){
+      if (i < arr.length - 2){
+        str += ` ${arr[i].itemName} at $${arr[i].itemPrice},`;
+      }else{
+        str += ` and ${arr[i].itemName} at $${arr[i].itemPrice}.`;
+      }
+    }
+  }
 }
 
 function total() {
