@@ -60,7 +60,7 @@ function removeFromCart(item) {
   
   for (let i = 0; i < arr.length; i++){
     if(arr[i].itemName === item){
-      delete arr[i][item];
+      delete arr[item];
       return arr;
     }
   }
