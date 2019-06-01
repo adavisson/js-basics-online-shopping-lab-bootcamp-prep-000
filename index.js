@@ -13,8 +13,9 @@ function addToCart(item) {
  // write your code here
  var rand = Math.floor(Math.random() * 100);
  var obj = {itemName: item, itemPrice: rand};
- 
- if(){
+ var arr = getCart();
+ arr.push(obj);
+ if(setCart(arr)){
    return `${item} had been added to your cart.`;
  }
 }
