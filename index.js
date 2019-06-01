@@ -15,6 +15,7 @@ function addToCart(item) {
  var obj = {itemName: item, itemPrice: rand};
  var arr = getCart();
  arr.push(obj);
+ 
  if(setCart(arr)){
    return `${item} had been added to your cart.`;
  }
