@@ -33,7 +33,7 @@ function viewCart() {
       if (i < arr.length - 2){
         str += ` ${arr[i].itemName} at $${arr[i].itemPrice},`;
       }else if (i === arr.length - 2){
-        str += ` and ${arr[i].itemName} at $${arr[i].itemPrice},`;
+        str += ` ${arr[i].itemName} at $${arr[i].itemPrice}, and`;
       }else {
         str += ` ${arr[i].itemName} at $${arr[i].itemPrice}.`;
       }
